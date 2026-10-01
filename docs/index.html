@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Flash RoboLynk Lite</title>
+<style>
+  :root {
+    --bg: #0d1117; --fg: #e6edf3; --muted: #8b949e;
+    --line: #30363d; --accent: #58a6ff; --warn: #d29922;
+  }
+  @media (prefers-color-scheme: light) {
+    :root:not([data-theme="dark"]) {
+      --bg: #ffffff; --fg: #1f2328; --muted: #656d76;
+      --line: #d0d7de; --accent: #0969da; --warn: #9a6700;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0d1117; --fg: #e6edf3; --muted: #8b949e;
+    --line: #30363d; --accent: #58a6ff; --warn: #d29922;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--fg);
+    font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    padding: 48px 16px;
+  }
+  main { max-width: 640px; margin: 0 auto; }
+  h1 { font-size: 28px; margin: 0 0 4px; letter-spacing: -0.02em; }
+  p.sub { color: var(--muted); margin: 0 0 32px; }
+  .card {
+    border: 1px solid var(--line); border-radius: 12px;
+    padding: 24px; margin-bottom: 24px;
+  }
+  ol { margin: 0; padding-left: 22px; }
+  li { margin-bottom: 10px; }
+  code {
+    background: color-mix(in srgb, var(--fg) 8%, transparent);
+    padding: 2px 6px; border-radius: 5px; font-size: 14px;
+  }
+  .note {
+    border-left: 3px solid var(--warn); padding: 12px 16px; margin-top: 24px;
+    background: color-mix(in srgb, var(--warn) 8%, transparent);
+    border-radius: 0 8px 8px 0;
+  }
+  .note strong { color: var(--warn); }
+  a { color: var(--accent); }
+  footer { color: var(--muted); font-size: 14px; margin-top: 40px; text-align: center; }
+  esp-web-install-button { display: block; margin: 8px 0; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Flash RoboLynk Lite</h1>
+  <p class="sub">Installs the firmware straight from this page. Nothing to download.</p>
+
+  <div class="card">
+    <!-- ESP Web Tools needs HTTPS, which GitHub Pages provides. The button is
+         hidden automatically in browsers without WebSerial, and the <p slot>
+         below is what those visitors see instead. -->
+    <script
+      type="module"
+      src="https://unpkg.com/esp-web-tools@10/dist/web/install-button.js?module"
+    ></script>
+
+    <esp-web-install-button manifest="./manifest.json">
+      <p slot="unsupported">
+        This browser cannot talk to serial devices. Open this page in
+        <strong>Chrome</strong> or <strong>Edge</strong> on a desktop.
+      </p>
+      <p slot="not-allowed">
+        Serial access is blocked. The page must be served over HTTPS.
+      </p>
+    </esp-web-install-button>
+
+    <ol>
+      <li>Connect the board by USB-C.</li>
+      <li>Press <strong>Connect</strong> and pick the board's serial port.</li>
+      <li>Choose <strong>Install</strong> and let it finish — about 70 seconds.</li>
+    </ol>
+
+    <div class="note">
+      <strong>When it finishes, unplug the board and plug it back in.</strong>
+      The flasher reports a reset, but on this chip that does not actually restart
+      the application. Without a physical replug the screen stays dark and it looks
+      as though the flash failed.
+    </div>
+  </div>
+
+  <div class="card">
+    <h2 style="font-size:18px;margin:0 0 12px">After flashing</h2>
+    <ol>
+      <li>The robot shows <strong>TAP TO BEGIN</strong>. Tap and accept the terms.</li>
+      <li>Choose <strong>Phone Setup</strong>, join the <code>RoboLynk-XXXX</code>
+          network from your phone, and open <code>192.168.4.1</code>.</li>
+      <li>Pick your Wi-Fi from the list. Only 2.4&nbsp;GHz networks appear — the
+          robot cannot use 5&nbsp;GHz.</li>
+      <li>Open <strong>Settings &rarr; Info</strong> and note the six-character
+          <strong>Setup Code</strong>.</li>
+      <li>Create an account, then add the robot with that code.</li>
+    </ol>
+  </div>
+
+  <footer>Built by RoboLynk LLC, Los Angeles.</footer>
+</main>
+</body>
+</html>

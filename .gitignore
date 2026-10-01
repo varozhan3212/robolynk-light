@@ -1,0 +1,9 @@
+# Firmware binaries are published as GitHub RELEASE assets, never committed:
+# a 16MB blob per version stays in git history forever and cannot be removed
+# without rewriting it.
+*.bin
+
+# This repo is deliberately BINARY-ONLY. The firmware source lives in the private
+# canonical repo and must not be published here.
+*.py
+*.mpy
