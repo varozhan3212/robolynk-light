@@ -46,8 +46,8 @@ anything that matters medically.
 | GPS module (optional) | UART, 3.3V. Skip unless you want location answers. |
 | 3D-printed case | Four printed parts. Confirmed to fit this board. Files below. |
 | 630 mAh LiPo battery | 1-cell (3.7 V), JST-PH connector, with a protection circuit. Charges over the board's USB-C. [Example on Amazon](https://www.amazon.com/dp/B0D7MC714N) |
-| M2 heat-set inserts x4 | Pressed into the printed shell. [Example kit on Amazon](https://www.amazon.com/dp/B0DRV9R3H9) — sold with matching screws |
-| M2 screws x4 | Secure the case. Length to suit your print; 6-8 mm is typical. Included in the insert kit above. |
+| M2 heat-set inserts x4 | Pressed into the printed shell. [Example kit on Amazon](https://www.amazon.com/dp/B0DRV9R3H9) |
+| M2 screws x4 | Secure the case. 6-8 mm suits most prints. Insert kits often include matching screws — check before ordering separately. |
 | Hot glue | Holds the board in the shell. |
 
 No custom PCB, and no wiring at all unless you add GPS.
@@ -125,7 +125,7 @@ A four-part printed case, screwed together. Verified against this board.
 | `clips_v22.stl` | 1 plate | Internal clips |
 | `buttons_v22.stl` | 1 plate | Caps for the reset and boot buttons |
 
-You also need **4 x M2 heat-set inserts**, **4 x M2 screws**, and a glue gun.
+You also need a glue gun, plus the fasteners listed in Parts.
 
 ### Printing
 
