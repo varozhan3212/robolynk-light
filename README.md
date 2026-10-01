@@ -40,17 +40,19 @@ anything that matters medically.
 
 | Part | Notes |
 |---|---|
-| ES3C28P (or ES3N28P) ESP32-S3 board | 2.8" 240×320 ILI9341 display, capacitive touch, ES8311 audio codec, speaker amp, microSD slot, USB-C. This single board is most of the build. |
+| ES3C28P (or ES3N28P) ESP32-S3 board | [Example on Amazon](https://www.amazon.com/dp/B0FSQLPQ6M) &middot; 2.8" 240×320 ILI9341 display, capacitive touch, ES8311 audio codec, speaker amp, microSD slot, USB-C. **Match the model number** — other ESP32-S3 boards look similar but use a different display controller or have no audio codec, and the firmware will not work on them. |
 | microSD card (optional) | Only needed for the higher-frame-count face animation and music. The robot works without one. |
 | Speaker | Small 8Ω unit; most of these boards ship with one. |
 | GPS module (optional) | UART, 3.3V. Skip unless you want location answers. |
 | 3D-printed case | Four printed parts. Confirmed to fit this board. Files below. |
-| 630 mAh LiPo battery | 1-cell (3.7 V) with a JST-PH connector. Charges over the board's USB-C. |
+| 630 mAh LiPo battery | 1-cell (3.7 V), JST-PH connector, with a protection circuit. Charges over the board's USB-C. [Example on Amazon](https://www.amazon.com/dp/B0D7MC714N) |
 | M2 heat-set inserts x4 | Pressed into the printed shell. |
 | M2 screws x4 | Secure the case. Length to suit your print; 6-8 mm is typical. |
 | Hot glue | Holds the board in the shell. |
 
 No custom PCB, and no wiring at all unless you add GPS.
+
+The shopping links are examples, not requirements — listings move and disappear. The model numbers above are what matter, and these parts are widely available from other sellers.
 
 > **Photo slot 2 — the parts laid flat**, board, card, speaker, side by side on a
 > plain surface, shot from directly above.
