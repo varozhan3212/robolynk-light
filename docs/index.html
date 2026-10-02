@@ -63,7 +63,11 @@
       src="https://unpkg.com/esp-web-tools@10/dist/web/install-button.js?module"
     ></script>
 
-    <esp-web-install-button manifest="./manifest.json">
+    <!-- manifest-v2.json, not manifest.json: the first manifest pointed at a GitHub
+         release asset, which the browser cannot read (no CORS header). Browsers that
+         already cached that file kept failing with "Failed to fetch" after the fix,
+         so the new manifest has a new name and cannot be served from that cache. -->
+    <esp-web-install-button manifest="./manifest-v2.json">
       <p slot="unsupported">
         This browser cannot talk to serial devices. Open this page in
         <strong>Chrome</strong> or <strong>Edge</strong> on a desktop.
