@@ -7,7 +7,7 @@
       "chipFamily": "ESP32-S3",
       "parts": [
         {
-          "path": "https://robolynk.cloud/api/v1/robolynklite/factory-image/",
+          "path": "https://robolynk.cloud/api/v1/robolynklite/factory-image/?v=robolynk_light_1.3.203.bin",
           "offset": 0
         }
       ]
