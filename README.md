@@ -24,7 +24,12 @@ dev board, so you can reproduce it in an afternoon without a soldering iron.
 - **Wi-Fi setup from your phone.** The robot raises its own hotspot and serves a
   small page; you type your network details there. No keyboard needed.
 - **Updates itself.** On boot it checks for new firmware and installs it.
-- Optional GPS module for "where am I", and Bluetooth LE scanning.
+- **A light and an SOS signal, both without a network.** Tap the top-left of the
+  screen to switch the built-in white LED on and off. Hold it for three seconds and
+  it flashes an SOS pattern with an emergency screen. Neither needs Wi-Fi or a
+  server, so they work anywhere.
+- Optional GPS module for "where am I", and Bluetooth LE scanning. Without a module
+  fitted, GPS simply does not appear.
 
 Reminders and alarms here are a convenience feature. Do not rely on them for
 anything that matters medically.
@@ -72,13 +77,13 @@ The whole firmware is a single file. **In a browser**, with nothing installed:
 
 1. Open **https://espressif.github.io/esptool-js/** in Chrome or Edge
 2. **Connect**, pick the board's serial port
-3. Add `robolynk_light_1.3.199.bin`, set the **flash address to `0`**
+3. Add `robolynk_light_1.3.202.bin`, set the **flash address to `0`**
 4. **Program** — about 70 seconds
 
 Or from a terminal, if you prefer:
 
 ```bash
-esptool --port /dev/cu.usbmodemXXXX write_flash 0x0 robolynk_light_1.3.199.bin
+esptool --port /dev/cu.usbmodemXXXX write_flash 0x0 robolynk_light_1.3.202.bin
 ```
 
 **When it finishes, unplug the board and plug it back in.** The flasher reports a

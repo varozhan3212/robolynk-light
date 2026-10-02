@@ -1,13 +1,13 @@
 {
   "name": "RoboLynk Lite",
-  "version": "1.3.199",
+  "version": "1.3.202",
   "new_install_prompt_erase": true,
   "builds": [
     {
       "chipFamily": "ESP32-S3",
       "parts": [
         {
-          "path": "https://github.com/varozhan3212/robolynk-light/releases/download/v1.3.199/robolynk_light_1.3.199.bin",
+          "path": "https://github.com/varozhan3212/robolynk-light/releases/download/v1.3.202/robolynk_light_1.3.202.bin",
           "offset": 0
         }
       ]
