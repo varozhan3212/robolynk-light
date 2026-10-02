@@ -7,3 +7,6 @@
 # canonical repo and must not be published here.
 *.py
 *.mpy
+
+# Internal publishing notes — never in the public repo
+PUBLISH.md
