@@ -5,8 +5,8 @@ let go — it answers out loud, shows an animated face while it speaks, and can 
 alarms and timers or control your smart lights. Everything runs on one
 ESP32-S3 board with a 2.8" colour screen, and it updates itself over Wi-Fi.
 
-This is the first working prototype of RoboFoxy. It is built from an off-the-shelf
-dev board, so you can reproduce it in an afternoon without a soldering iron.
+It is built from an off-the-shelf dev board, so you can reproduce it in an afternoon 
+without a soldering iron.
 
 > **Photo slot 1 — hero shot.** Robot on a desk, screen showing the face, lit from
 > one side, dark background. Landscape.
