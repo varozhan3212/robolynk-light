@@ -77,13 +77,13 @@ The whole firmware is a single file. **In a browser**, with nothing installed:
 
 1. Open **https://espressif.github.io/esptool-js/** in Chrome or Edge
 2. **Connect**, pick the board's serial port
-3. Add `robolynk_light_1.3.202.bin`, set the **flash address to `0`**
+3. Add `robolynk_light_1.3.203.bin`, set the **flash address to `0`**
 4. **Program** — about 70 seconds
 
 Or from a terminal, if you prefer:
 
 ```bash
-esptool --port /dev/cu.usbmodemXXXX write_flash 0x0 robolynk_light_1.3.202.bin
+esptool --port /dev/cu.usbmodemXXXX write_flash 0x0 robolynk_light_1.3.203.bin
 ```
 
 **When it finishes, unplug the board and plug it back in.** The flasher reports a
