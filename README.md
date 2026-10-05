@@ -36,6 +36,9 @@ anything that matters medically.
 
 **▶ Watch the full build and setup (5 min):** https://youtu.be/vgklh-3mNh4
 
+**📄 Written build guide on Hackster:**
+https://www.hackster.io/varozhan/a-talking-desk-robot-you-flash-from-a-web-page-ce6271
+
 Flashing from the browser, Wi-Fi setup from a phone, creating the account,
 first boot, and the robot answering a question — start to finish, nothing cut.
 
