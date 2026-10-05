@@ -10,3 +10,6 @@
 
 # Internal publishing notes — never in the public repo
 PUBLISH.md
+
+# macOS
+.DS_Store
