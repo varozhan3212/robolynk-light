@@ -5,8 +5,9 @@ let go — it answers out loud, shows an animated face while it speaks, and can 
 alarms and timers or control your smart lights. Everything runs on one
 ESP32-S3 board with a 2.8" colour screen, and it updates itself over Wi-Fi.
 
-It is built from an off-the-shelf dev board, so you can reproduce it in an afternoon 
-without a soldering iron.
+It is built from an off-the-shelf dev board, so you can reproduce it without a
+soldering iron: about ten minutes of hands-on work, plus an hour and twenty
+minutes of printing you can leave running.
 
 ![RoboLynk Lite, assembled and running](docs/img/hero.jpg)
 
