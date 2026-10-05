@@ -212,6 +212,26 @@ None of these were hardware limits. All three looked like one.
 
 ---
 
+## Licence
+
+Two different things here, under two different terms:
+
+- **The case files, the build guide and the photographs** are
+  [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/). Build it,
+  print it, change it, sell what you make — credit RoboLynk and share your
+  changes under the same terms.
+- **The firmware is not open source.** It ships as a binary and is free to use
+  on your own device, as many boards as you like. It is not redistributable,
+  and the source is not published.
+
+The firmware uses a RoboLynk server for speech and language, so the robot needs
+a free account and an internet connection to talk. The lamp, the SOS signal, the
+clock and the alarms work without either.
+
+Full terms in [LICENSE](LICENSE).
+
+---
+
 ## Status
 
 Working prototype, in daily use. Radio streaming, camera vision and wake-word
