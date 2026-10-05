@@ -8,8 +8,7 @@ ESP32-S3 board with a 2.8" colour screen, and it updates itself over Wi-Fi.
 It is built from an off-the-shelf dev board, so you can reproduce it in an afternoon 
 without a soldering iron.
 
-> **Photo slot 1 — hero shot.** Robot on a desk, screen showing the face, lit from
-> one side, dark background. Landscape.
+![RoboLynk Lite, assembled and running](docs/img/hero.jpg)
 
 ---
 
@@ -34,10 +33,10 @@ without a soldering iron.
 Reminders and alarms here are a convenience feature. Do not rely on them for
 anything that matters medically.
 
-> **Video slot — 45-60 seconds.** One unbroken take: press, ask "why is the 4th of
-> July important?", release, wait for the spoken answer. Then one voice command
-> that visibly changes something in the room, e.g. the lights. Real audio from the
-> robot's own speaker, no voice-over, no captions needed.
+**▶ Watch the full build and setup (5 min):** https://youtu.be/vgklh-3mNh4
+
+Flashing from the browser, Wi-Fi setup from a phone, creating the account,
+first boot, and the robot answering a question — start to finish, nothing cut.
 
 ---
 
@@ -59,8 +58,7 @@ No custom PCB, and no wiring at all unless you add GPS.
 
 The shopping links are examples, not requirements — listings move and disappear. The model numbers above are what matter, and these parts are widely available from other sellers.
 
-> **Photo slot 2 — the parts laid flat**, board, card, speaker, side by side on a
-> plain surface, shot from directly above.
+![The parts, laid out](docs/img/parts.jpg)
 
 ---
 
@@ -109,8 +107,7 @@ Power it on. It shows a splash, then **TAP TO BEGIN**.
 Until you add it to an account the robot will say so rather than answering — it is
 online, just not linked to anyone yet.
 
-> **Photo slot 3 — the hotspot screen**, showing the network name and password as
-> the robot displays them. Photograph the screen directly, straight on.
+![Wi-Fi setup page, served by the robot](docs/img/wifi-setup.jpg)
 
 ### 3. Talk to it
 
@@ -165,8 +162,9 @@ Check the polarity against your board before plugging it in — JST-PH connector
 not standardised between suppliers, and a reversed cell will damage the board. If
 the housing is wired backwards, move the pins rather than forcing it.
 
-> **Photo slot 4 — the four printed parts** laid out before assembly, plus one of
-> the finished case closed, three-quarter view.
+![Printed shells, red and black](docs/img/printed-parts.jpg)
+
+![Board mounted in the case](docs/img/board-in-case.jpg)
 
 ---
 
